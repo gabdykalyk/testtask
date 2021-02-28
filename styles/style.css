@@ -94,7 +94,7 @@ body {
     font-size: 14px;
     color: #8B8B8B;
     margin-left: 36px;
-    letter-spacing: 0.35px;
+    letter-spacing: 0.45px;
     margin-top: 4px;
 }
 
@@ -142,7 +142,7 @@ body {
     color: #5375B7;
     text-decoration: none;
     display: inline-block;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 span {
@@ -151,7 +151,7 @@ span {
 }
 
 .price {
-    margin-top: 46px;
+    margin-top: 35px;
 }
 
 .price__title {
@@ -162,14 +162,205 @@ span {
     display: flex;
     align-items: center;
     color: rgba(0, 0, 0, .5);
+    margin-top: 16px;
 }
 
 .price__input {
-    width: 110px;
-    height: 40px;
+    width: 97px;
+    height: 39px;
     border: 1px solid #DEDEDE;
     outline: none;
     margin-left: 9px;
     margin-right: 9px;
     padding: 0;
+    padding-left: 12px;
+}
+
+.price__label {
+    font-size: 12px;
+}
+
+.brand__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.brand__checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.brand__icon {
+    width: 100%;
+    opacity: 0;
+    transition: all .1s linear;
+}
+
+.brand__input:checked ~ .brand__checkbox > .brand__icon {
+    opacity: 1;
+}
+
+.brand__input {
+    display: none;
+}
+
+.brand {
+    margin-top: 27px;
+}
+
+.brand__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.brand__title {
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.brand__clear {
+    color: #333333;
+    opacity: 0.5;
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.main {
+    display: flex;
+}
+
+.product {
+    width: 100%;
+    padding-left: 42px;
+}
+
+.product__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -7px;
+}
+
+.product__sort {
+    display: flex;
+    letter-spacing: 0.5px;
+}
+
+.product__title {
+    margin-right: 10px;
+}
+
+.product__option {
+    margin-right: 15px;
+    color: #5375B7;
+    text-decoration: none;
+}
+
+.product__option:first-of-type {
+    color: #000;
+}
+
+.product__select {
+    border: 1px solid #DEDEDE;
+    border-radius: 3px;
+    padding-top: 3px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    outline: none;
+    margin-left: 10px;
+}
+
+.product__count {
+    display: flex;
+    align-items: center;
+}
+
+.product__clarification {
+    margin-top: 15px;
+}
+
+.product__clarification-item {
+    background-color: #FFF3D8;
+    display: inline-block;
+    padding: 7px 15px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.product__main {
+    margin-top: 21px;
+}
+
+.product__row {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.product__item:not(:last-child) {
+    margin-right: 44px;
+    
+}
+
+.product__image {
+    width: 260px;
+    height: 260px;
+    background-color: #C4C4C4;
+}
+
+.product__name {
+    margin-top: 10px;
+    letter-spacing: 0.1px;
+}
+
+.product__price {
+    margin-top: 23px;
+    display: flex;
+    letter-spacing: 0.9px;
+}
+
+.product__btn {
+    margin-top: 15px;
+}
+
+.product__price-actual {
+    font-weight: 700;
+}
+
+.product__price-initial {
+    margin-left: 16px;
+    color: #A9A9A9;
+}
+
+.product__btn {
+    width: 100%;
+    height: 40px;
+    font-weight: 700;
+    background-color: #F1BD45;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+}
+
+.product__page {
+    display: flex;
+    font-size: 16px;
+}
+
+.product__page-num--actual {
+    opacity: .5;
+    margin-right: 30px;
+}
+
+.product__page-num--next {
+    margin-right: 10px;
+}
+
+.product__page-num--last {
+    margin-left: 6px;
+    margin-right: 16px;
 }
