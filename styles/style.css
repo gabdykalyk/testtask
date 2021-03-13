@@ -24,6 +24,7 @@ body {
 
 .search {
     display: flex;
+    justify-content: center;
 }
 
 .search__field {
@@ -128,6 +129,7 @@ body {
 
 .main {
     margin-top: 39px;
+    padding-bottom: 53px;
 }
 
 .aside {
